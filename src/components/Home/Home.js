@@ -4,9 +4,10 @@ import { useLoaderData } from 'react-router-dom';
 const Home = () => {
     const quizTopicsData = useLoaderData();
     const quizTopics = quizTopicsData.data;
+    console.log(quizTopics);
     return (
         <div>
-            <h2>Length {quizTopics.length}</h2>
+            <img></img>
         </div>
     );
 };
