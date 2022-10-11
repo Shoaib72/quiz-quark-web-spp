@@ -17,7 +17,7 @@ const Header = () => {
                 <div className='h-8 w-8 absolute'>
                     <Bars3Icon onClick={showMenu} className='md:hidden relative bottom-2 text-orange-600'></Bars3Icon>
                 </div>
-                <ul className='hidden lg:flex md:flex gap-10 text-orange-600 font-bold'>
+                <ul className='hidden ml-8 lg:flex md:flex gap-10 text-orange-600 font-bold'>
                     <li><Link to="/home">Topics</Link></li>
                     <li><Link to="/statistics">Statistics</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
