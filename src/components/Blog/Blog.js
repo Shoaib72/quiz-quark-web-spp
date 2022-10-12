@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div className='mt-36 md:mt-10'>
             <div className='flex flex-col justify-center items-center mx-20 mb-10'>
-                <h1 className='text-3xl text-red-400 mb-5'>What is React Router?</h1>
+                <h1 className='text-3xl text-red-400 mb-5'>What is the purpose of React Router?</h1>
                 <p> React Router is a fully-featured client and server-side routing library for React, a JavaScript library for building user interfaces. React Router runs anywhere React runs; on the web, on the server with node.js, and on React Native.React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>
             </div>
             <div className='flex flex-col justify-center items-center mx-20 mb-10'>

@@ -25,7 +25,7 @@ const Statistics = () => {
 
             </div>
             <h2 className='font-bold text-2xl mt-3 mb-3 md:text-3xl md:font-extrabold'>Figure: Linechart</h2>
-            <div className='mt-36 mr-[200px] ml-[10px] px-10 md:mt-[80px]'>
+            <div className='mt-36 mr-[120px] ml-[90px] px-10 md:mt-[80px]'>
                 <div className='flex flex-col md:flex-row md:gap-[100px] mr-40 mx-20 justify-center items-center gap-4'>
                     <FunnelChart width={370} height={250}>
                         <Tooltip />
