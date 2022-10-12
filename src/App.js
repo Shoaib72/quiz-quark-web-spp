@@ -14,7 +14,7 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
-
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: '/',
@@ -36,16 +36,16 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: () => {
+            return fetch('//openapi.programming-hero.com/api/quiz')
+          },
           element: <Statistics></Statistics>
         },
         {
           path: '/blog',
           element: <Blog></Blog>
         },
-        {
-          path: '*',
-          element: <ErrorPage></ErrorPage>
-        }
+
       ]
     }
   ])

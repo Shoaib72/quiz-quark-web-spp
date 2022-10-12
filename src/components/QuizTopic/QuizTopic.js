@@ -14,7 +14,7 @@ const QuizTopic = ({ quizTopic }) => {
                     <h3>Total Questions: {total}</h3>
                     <button className='flex justify-evenly items-center ml-2 mt-3 p-2 border-2 border-lime-700 bg-lime-600 rounded-2xl mb-5'>
                         <Link to={`/home/${id}`}>Start Quiz</Link>
-                        <ArrowSmallRightIcon className='h-4 w-4'></ArrowSmallRightIcon>
+                        <ArrowSmallRightIcon className='h-4 w-4 ml-2'></ArrowSmallRightIcon>
                     </button>
                 </div>
             </div>

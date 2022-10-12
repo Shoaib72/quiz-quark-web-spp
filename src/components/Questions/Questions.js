@@ -47,11 +47,24 @@ const Questions = ({ quizQuestion }) => {
             });
         }
     }
+    const showCorrectAnswer = () => {
+        const correctAnswer = quizQuestion.correctAnswer;
+        toast.success(`Correct Answer is 👉 ${correctAnswer}`, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    }
     return (
         <div>
             <div className='flex flex-col justify-center items-center'>
                 <h1 className='text-2xl text-bold mt-8'>{quizQuestion.question}</h1>
-                <EyeIcon className='h-5 w-5 mt-5 hover:bg-red-500'></EyeIcon>
+                <EyeIcon onClick={showCorrectAnswer} className='h-5 w-5 mt-5 hover:bg-red-500'></EyeIcon>
             </div>
             {
                 options.map(option => <div onClick={(e) => correctAnswerCheck(e.target.innerText)} className='border-2 md:w-1/2 ml-10 mr-20 md:ml-80 mt-5 rounded-lg p-8 hover:bg-slate-500 text-xl text-bold mb-10'>{option}</div>
