@@ -5,7 +5,7 @@ import { ArrowSmallRightIcon } from '@heroicons/react/24/solid'
 const QuizTopic = ({ quizTopic }) => {
     const { id, name, logo, total } = quizTopic;
     return (
-        <div className='flex flex-wrap'>
+        <div className='md:flex flex-wrap'>
 
             <div className='flex flex-col justify-center items-center mb-5 border-2 border-black-700 w-80'>
                 <img className='h-64 w-64 rounded-lg' src={logo} alt="" />

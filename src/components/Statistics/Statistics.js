@@ -8,7 +8,7 @@ const Statistics = () => {
     console.log(data)
     return (
         <div className='mt-36 mr-8 p-10 md:mt-5'>
-            <div className='flex flex-col mx-20 justify-center items-center gap-4'>
+            <div className='flex flex-col md:flex-row mx-20 justify-center items-center gap-4'>
                 <LineChart width={500}
                     height={300} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
