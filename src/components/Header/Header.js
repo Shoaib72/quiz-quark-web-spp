@@ -9,9 +9,9 @@ const Header = () => {
         setActive(!active)
     }
     return (
-        <div className='w-full h-20 border-stone-500 rounded-lg flex justify-around items-center bg-gray-200'>
+        <div className='w-full h-20 md:h-36 border-stone-500 rounded-lg flex justify-around items-center bg-gray-200'>
             <div>
-                <h1 className='text-5xl font-bold'>Quiz<span className='text-orange-600'>Q</span>uark</h1>
+                <h1 className='text-6xl font-bold'>Quiz<span className='text-orange-600'>Q</span>uark</h1>
             </div>
             <nav>
                 <div className='h-8 w-8 absolute'>
