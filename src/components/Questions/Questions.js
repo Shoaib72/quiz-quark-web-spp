@@ -20,9 +20,30 @@ const Questions = ({ quizQuestion }) => {
                 theme: "colored",
             });
         }
-        // note:This is special else if condition for first question of React quiz. All the
-        // quiz question were giving the right result but react first question wasn't giving the right toast even though user is giving the exact right answer. Thats why i have put this special "else if" condition manually only for React's 1st Quiz Question.
+        // these are some special cases in order to show the correct result
         else if (text === 'building User Interface') {
+            toast.success('😇 Well Done! Correct Answer!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        } else if (text === 'function Nayika() { return <h3> Mousumi </h3> }') {
+            toast.success('😇 Well Done! Correct Answer!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        } else if (text === '[name, setName] = UseState(“JingaLala”);') {
             toast.success('😇 Well Done! Correct Answer!', {
                 position: "top-center",
                 autoClose: 5000,
@@ -49,6 +70,7 @@ const Questions = ({ quizQuestion }) => {
     }
     const showCorrectAnswer = () => {
         const correctAnswer = quizQuestion.correctAnswer;
+
         toast.success(`Correct Answer is 👉 ${correctAnswer}`, {
             position: "top-center",
             autoClose: 5000,
