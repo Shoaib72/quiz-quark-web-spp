@@ -7,9 +7,9 @@ const QuizTopic = ({ quizTopic }) => {
     return (
 
         <div className='md:flex md:flex-row md:justify-evenly md:mx-[150px]'>
-            <div className='flex flex-col md:flex-row md:gap-[50px] justify-center items-center mb-5 md:mb-8 w-80 md:w-screen rounded-xl ml-[65px] md:rounded-xl md:py-3 md:ml-[-2px] bg-orange-600 md:bg-orange-600 md:hover:bg-red-400'>
+            <div className='flex flex-col md:flex-row md:gap-[20px] justify-center items-center mb-5 md:mb-8 w-80 md:w-screen rounded-xl ml-[65px] md:rounded-xl md:py-3 md:ml-[-2px] bg-orange-600 md:bg-orange-600 md:hover:bg-red-400'>
 
-                <img className='h-64 w-64 rounded-lg' src={logo} alt="" />
+                <img className='h-64 w-64 md:w-30 rounded-lg' src={logo} alt="" />
 
                 <div className='md:flex md:flex-row md:justify-center md:items-center'>
                     <h2 className='text-xl md:text-4xl text-cyan-900 font-bold'>{name}</h2>

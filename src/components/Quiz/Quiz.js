@@ -9,6 +9,7 @@ const Quiz = () => {
 
     const quizName = quiz.name;
     const quizQuestions = quiz.questions;
+
     return (
         <div>
             <h1 className='text-3xl text-bold md:mt-10 mt-36'>Quiz Of {quizName}</h1>
