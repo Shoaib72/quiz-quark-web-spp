@@ -8,9 +8,9 @@ const Statistics = () => {
     const data = dataForChartData.data;
 
     return (
-        <div className='sm:flex sm:flex-col sm:justify-center sm:items-center'>
+        <div className='flex flex-col justify-center items-center'>
             <div className='mt-36 mr-[120px] ml-[90px] px-10 md:mt-[80px]'>
-                <div className='flex flex-col md:flex-row md:gap-[100px] mx-20 justify-center items-center gap-4'>
+                <div className='flex flex-col md:flex-row md:gap-[100px] justify-center items-center gap-4'>
                     <LineChart width={370}
                         height={300} data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -26,8 +26,8 @@ const Statistics = () => {
 
                 </div>
                 <h2 className='font-bold text-2xl mt-3 mb-3 md:text-3xl md:font-extrabold'>Figure: Linechart</h2>
-                <div className='mt-36 mr-[120px] ml-[90px] px-10 md:mt-[80px]'>
-                    <div className='flex flex-col md:flex-row md:gap-[100px] mr-40 mx-20 justify-center items-center gap-4'>
+                <div className='mt-36 mr-[120px] ml-[120px] px-10 md:mt-[80px]'>
+                    <div className='flex flex-col md:flex-row md:gap-[100px] justify-center items-center gap-4'>
                         <FunnelChart width={370} height={250}>
                             <Tooltip />
                             <Funnel
